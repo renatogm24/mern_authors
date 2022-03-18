@@ -1,8 +1,6 @@
-import { Button } from "@mui/material";
 import { Link } from "@reach/router";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import FormAuthor from "./FormAuthor";
 import ListAuthors from "./ListAuthors";
 
 function Main({ authors, setAuthors, removeFromDom }) {

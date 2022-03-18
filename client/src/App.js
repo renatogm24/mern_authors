@@ -1,10 +1,7 @@
 import "./App.css";
 import Main from "./components/Main";
 import { Router } from "@reach/router";
-import Detail from "./components/Detail";
-import EditProduct from "./components/EditAuthor";
 import { useState } from "react";
-import FormAuthor from "./components/FormAuthor";
 import NewAuthor from "./components/NewAuthor";
 import EditAuthor from "./components/EditAuthor";
 

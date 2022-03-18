@@ -51,7 +51,6 @@ const FormAuthor = ({
 
   const handleSubmit = (e, inputs) => {
     e.preventDefault();
-    console.log(inputs);
     handleSubmitCallBack(inputs, setAlert, setErrors, authors, setAuthors);
   };
 

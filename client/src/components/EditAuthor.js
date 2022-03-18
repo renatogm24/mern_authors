@@ -1,8 +1,5 @@
-import { Alert, Button, Collapse, IconButton, TextField } from "@mui/material";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import CloseIcon from "@mui/icons-material/Close";
-import { upperFirst } from "lodash";
 import { navigate } from "@reach/router";
 import FormAuthor from "./FormAuthor";
 
@@ -18,7 +15,6 @@ const EditAuthor = (props) => {
       setInputs({
         name: data.author.name,
       });
-      console.log(data.author.name);
     });
   }, []);
 

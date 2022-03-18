@@ -1,7 +1,5 @@
-import { Button } from "@mui/material";
-import { Link, navigate } from "@reach/router";
+import { navigate } from "@reach/router";
 import axios from "axios";
-import { useEffect, useState } from "react";
 import FormAuthor from "./FormAuthor";
 
 function NewAuthor({ setAuthors, authors }) {
