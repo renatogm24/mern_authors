@@ -7,18 +7,16 @@ const Detail = ({ id, removeFromDom }) => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/products/" + id).then(({ data }) => {
+    axios.get("/api/products/" + id).then(({ data }) => {
       setProduct(data.product);
     });
   }, []);
 
   const deletePerson = (productId) => {
-    axios
-      .delete("http://localhost:8000/api/products/" + productId)
-      .then((res) => {
-        removeFromDom(productId);
-        navigate("/products");
-      });
+    axios.delete("/api/products/" + productId).then((res) => {
+      removeFromDom(productId);
+      navigate("/products");
+    });
   };
 
   return (

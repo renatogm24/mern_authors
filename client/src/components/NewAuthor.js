@@ -11,7 +11,7 @@ function NewAuthor({ setAuthors, authors }) {
     setAuthors
   ) => {
     axios
-      .post("http://localhost:8000/api/authors/new", {
+      .post("/api/authors/new", {
         data: inputs,
       })
       .then((res) => {

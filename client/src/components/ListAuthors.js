@@ -5,11 +5,9 @@ import axios from "axios";
 
 const Listauthors = ({ authors, removeFromDom }) => {
   const deleteAuthor = (authorId) => {
-    axios
-      .delete("http://localhost:8000/api/authors/" + authorId)
-      .then((res) => {
-        removeFromDom(authorId);
-      });
+    axios.delete("/api/authors/" + authorId).then((res) => {
+      removeFromDom(authorId);
+    });
   };
 
   const columns = [

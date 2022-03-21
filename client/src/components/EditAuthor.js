@@ -11,7 +11,7 @@ const EditAuthor = (props) => {
   });
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/authors/" + id).then(({ data }) => {
+    axios.get("/api/authors/" + id).then(({ data }) => {
       setInputs({
         name: data.author.name,
       });
@@ -26,7 +26,7 @@ const EditAuthor = (props) => {
     setAuthors
   ) => {
     axios
-      .put(`http://localhost:8000/api/authors/${id}`, inputs)
+      .put(`/api/authors/${id}`, inputs)
       .then((res) => {
         setAlert({
           open: true,

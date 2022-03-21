@@ -7,7 +7,7 @@ function Main({ authors, setAuthors, removeFromDom }) {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/authors/").then(({ data }) => {
+    axios.get("/api/authors/").then(({ data }) => {
       setAuthors(data.authors);
       setLoaded(true);
     });
